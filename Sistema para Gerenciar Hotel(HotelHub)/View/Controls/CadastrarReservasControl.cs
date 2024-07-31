@@ -21,5 +21,10 @@ namespace Sistema_para_Gerenciar_Hotel_HotelHub_.View
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

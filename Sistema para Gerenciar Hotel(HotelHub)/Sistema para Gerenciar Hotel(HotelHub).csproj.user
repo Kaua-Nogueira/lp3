@@ -1,10 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Compile Update="View\Controls\AtualizarFunc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="View\Controls\AtualizarReservas.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="View\Controls\CadastrarReservasControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="View\Controls\CadastroFuncControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="View\Controls\ConsultarReservasControl.cs">
@@ -12,6 +18,9 @@
     </Compile>
     <Compile Update="View\Controls\RemoverReservasControl.cs">
       <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="View\FuncionarioPage.cs">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Update="View\HomePage.cs">
       <SubType>Form</SubType>

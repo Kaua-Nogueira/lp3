@@ -12,9 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\victo\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\victo\\.nuget\\packages",
-      "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      "C:\\Users\\kaua\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\kaua\\.nuget\\packages"
     ],
     "configProperties": {
       "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": true,

@@ -7,14 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Sistema_para_Gerenciar_Hotel_HotelHub_.Controller;
 
 namespace Sistema_para_Gerenciar_Hotel_HotelHub_.View
 {
     public partial class HomePage : Form
     {
+        FuncionarioController funcionarioController;
         public HomePage()
         {
             InitializeComponent();
+            funcionarioController = new FuncionarioController();
         }
         private void HomePage_Load(object sender, EventArgs e)
         {
@@ -36,6 +39,25 @@ namespace Sistema_para_Gerenciar_Hotel_HotelHub_.View
             TelaDeReservas tela = new TelaDeReservas();
             tela.MdiParent = this;
             tela.Show();
+        }
+
+        private void funcionáriosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            FuncionarioPage telafunc = new FuncionarioPage(funcionarioController);
+            telafunc.MdiParent = this;
+            telafunc.Show();
+            pictureBox1.Hide();
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
