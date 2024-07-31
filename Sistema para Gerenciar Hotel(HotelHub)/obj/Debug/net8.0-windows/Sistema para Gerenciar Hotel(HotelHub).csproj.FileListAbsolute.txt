@@ -1,0 +1,23 @@
+C:\Users\victo\source\repos\Sistema para Gerenciar Hotel(HotelHub)\Sistema para Gerenciar Hotel(HotelHub)\bin\Debug\net8.0-windows\Sistema para Gerenciar Hotel(HotelHub).exe
+C:\Users\victo\source\repos\Sistema para Gerenciar Hotel(HotelHub)\Sistema para Gerenciar Hotel(HotelHub)\bin\Debug\net8.0-windows\Sistema para Gerenciar Hotel(HotelHub).deps.json
+C:\Users\victo\source\repos\Sistema para Gerenciar Hotel(HotelHub)\Sistema para Gerenciar Hotel(HotelHub)\bin\Debug\net8.0-windows\Sistema para Gerenciar Hotel(HotelHub).runtimeconfig.json
+C:\Users\victo\source\repos\Sistema para Gerenciar Hotel(HotelHub)\Sistema para Gerenciar Hotel(HotelHub)\bin\Debug\net8.0-windows\Sistema para Gerenciar Hotel(HotelHub).dll
+C:\Users\victo\source\repos\Sistema para Gerenciar Hotel(HotelHub)\Sistema para Gerenciar Hotel(HotelHub)\bin\Debug\net8.0-windows\Sistema para Gerenciar Hotel(HotelHub).pdb
+C:\Users\victo\source\repos\Sistema para Gerenciar Hotel(HotelHub)\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema para Gerenciar Hotel(HotelHub).csproj.GenerateResource.cache
+C:\Users\victo\source\repos\Sistema para Gerenciar Hotel(HotelHub)\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema para Gerenciar Hotel(HotelHub).GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\victo\source\repos\Sistema para Gerenciar Hotel(HotelHub)\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema para Gerenciar Hotel(HotelHub).AssemblyInfoInputs.cache
+C:\Users\victo\source\repos\Sistema para Gerenciar Hotel(HotelHub)\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema para Gerenciar Hotel(HotelHub).AssemblyInfo.cs
+C:\Users\victo\source\repos\Sistema para Gerenciar Hotel(HotelHub)\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema para Gerenciar Hotel(HotelHub).csproj.CoreCompileInputs.cache
+C:\Users\victo\source\repos\Sistema para Gerenciar Hotel(HotelHub)\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema para Gerenciar Hotel(HotelHub).dll
+C:\Users\victo\source\repos\Sistema para Gerenciar Hotel(HotelHub)\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\refint\Sistema para Gerenciar Hotel(HotelHub).dll
+C:\Users\victo\source\repos\Sistema para Gerenciar Hotel(HotelHub)\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema para Gerenciar Hotel(HotelHub).pdb
+C:\Users\victo\source\repos\Sistema para Gerenciar Hotel(HotelHub)\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema para Gerenciar Hotel(HotelHub).genruntimeconfig.cache
+C:\Users\victo\source\repos\Sistema para Gerenciar Hotel(HotelHub)\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\ref\Sistema para Gerenciar Hotel(HotelHub).dll
+C:\Users\victo\source\repos\Sistema para Gerenciar Hotel(HotelHub)\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema_para_Gerenciar_Hotel_HotelHub_.TelaLogin.resources
+C:\Users\victo\source\repos\Sistema para Gerenciar Hotel(HotelHub)\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema_para_Gerenciar_Hotel_HotelHub_.Properties.Resources.resources
+C:\Users\victo\source\repos\Sistema para Gerenciar Hotel(HotelHub)\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema_para_Gerenciar_Hotel_HotelHub_.View.Controls.AtualizarReservas.resources
+C:\Users\victo\source\repos\Sistema para Gerenciar Hotel(HotelHub)\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema_para_Gerenciar_Hotel_HotelHub_.View.TelaDeReservas.resources
+C:\Users\victo\source\repos\Sistema para Gerenciar Hotel(HotelHub)\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema_para_Gerenciar_Hotel_HotelHub_.View.HomePage.resources
+C:\Users\victo\source\repos\Sistema para Gerenciar Hotel(HotelHub)\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema_para_Gerenciar_Hotel_HotelHub_.View.CadastrarReservasControl.resources
+C:\Users\victo\source\repos\Sistema para Gerenciar Hotel(HotelHub)\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema_para_Gerenciar_Hotel_HotelHub_.View.Controls.ConsultarReservasControl.resources
+C:\Users\victo\source\repos\Sistema para Gerenciar Hotel(HotelHub)\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema_para_Gerenciar_Hotel_HotelHub_.View.Controls.RemoverReservasControl.resources
