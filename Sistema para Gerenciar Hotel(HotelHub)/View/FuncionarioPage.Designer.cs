@@ -40,7 +40,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.logo;
-            pictureBox1.Location = new Point(12, 12);
+            pictureBox1.Location = new Point(33, 17);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(112, 115);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -49,7 +49,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(12, 154);
+            button1.Location = new Point(33, 159);
             button1.Name = "button1";
             button1.Size = new Size(112, 40);
             button1.TabIndex = 1;
@@ -59,7 +59,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(12, 200);
+            button2.Location = new Point(33, 205);
             button2.Name = "button2";
             button2.Size = new Size(112, 40);
             button2.TabIndex = 2;
@@ -69,7 +69,7 @@
             // 
             // button3
             // 
-            button3.Location = new Point(12, 246);
+            button3.Location = new Point(33, 251);
             button3.Name = "button3";
             button3.Size = new Size(112, 40);
             button3.TabIndex = 3;
@@ -79,7 +79,7 @@
             // 
             // panel1
             // 
-            panel1.Location = new Point(154, 28);
+            panel1.Location = new Point(175, 33);
             panel1.Name = "panel1";
             panel1.Size = new Size(543, 377);
             panel1.TabIndex = 4;
@@ -87,7 +87,7 @@
             // 
             // button4
             // 
-            button4.Location = new Point(12, 365);
+            button4.Location = new Point(33, 370);
             button4.Name = "button4";
             button4.Size = new Size(112, 40);
             button4.TabIndex = 5;
@@ -109,6 +109,7 @@
             Controls.Add(pictureBox1);
             Name = "FuncionarioPage";
             Text = "FuncionarioPage";
+            Load += FuncionarioPage_Load_1;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }

@@ -1,0 +1,5 @@
+C:\Users\kaua\Desktop\pessoal\h\Sistema para Gerenciar Hotel(HotelHub).exe
+C:\Users\kaua\Desktop\pessoal\h\Sistema para Gerenciar Hotel(HotelHub).dll
+C:\Users\kaua\Desktop\pessoal\h\Sistema para Gerenciar Hotel(HotelHub).deps.json
+C:\Users\kaua\Desktop\pessoal\h\Sistema para Gerenciar Hotel(HotelHub).runtimeconfig.json
+C:\Users\kaua\Desktop\pessoal\h\Sistema para Gerenciar Hotel(HotelHub).pdb

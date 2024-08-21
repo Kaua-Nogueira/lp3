@@ -42,13 +42,18 @@ namespace Sistema_para_Gerenciar_Hotel_HotelHub_.View.Controls
                 var funcionario = (Funcionario)selectedRow.DataBoundItem;
                 this.funcionarioId = funcionario.Id;
 
-                MessageBox.Show("Funcionário: "+funcionario.Name, "escolha");  // Converte Id para string para exibir no MessageBox
+                MessageBox.Show("Nome: " + funcionario.Name, "Você selecionou um funcionário");  // Converte Id para string para exibir no MessageBox
             }
         }
 
         public int getFuncionarioId()
         {
             return this.funcionarioId;
+        }
+
+        private void AtualizarFunc_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

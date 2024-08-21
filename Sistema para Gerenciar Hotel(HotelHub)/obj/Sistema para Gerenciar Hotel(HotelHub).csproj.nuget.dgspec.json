@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kaua\\Desktop\\gitclone\\gitclone\\Sistema para Gerenciar Hotel(HotelHub)\\Sistema para Gerenciar Hotel(HotelHub).csproj": {}
+    "C:\\Users\\kaua\\source\\repos\\lp3\\Sistema para Gerenciar Hotel(HotelHub)\\Sistema para Gerenciar Hotel(HotelHub).csproj": {}
   },
   "projects": {
-    "C:\\Users\\kaua\\Desktop\\gitclone\\gitclone\\Sistema para Gerenciar Hotel(HotelHub)\\Sistema para Gerenciar Hotel(HotelHub).csproj": {
+    "C:\\Users\\kaua\\source\\repos\\lp3\\Sistema para Gerenciar Hotel(HotelHub)\\Sistema para Gerenciar Hotel(HotelHub).csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kaua\\Desktop\\gitclone\\gitclone\\Sistema para Gerenciar Hotel(HotelHub)\\Sistema para Gerenciar Hotel(HotelHub).csproj",
+        "projectUniqueName": "C:\\Users\\kaua\\source\\repos\\lp3\\Sistema para Gerenciar Hotel(HotelHub)\\Sistema para Gerenciar Hotel(HotelHub).csproj",
         "projectName": "Sistema para Gerenciar Hotel(HotelHub)",
-        "projectPath": "C:\\Users\\kaua\\Desktop\\gitclone\\gitclone\\Sistema para Gerenciar Hotel(HotelHub)\\Sistema para Gerenciar Hotel(HotelHub).csproj",
+        "projectPath": "C:\\Users\\kaua\\source\\repos\\lp3\\Sistema para Gerenciar Hotel(HotelHub)\\Sistema para Gerenciar Hotel(HotelHub).csproj",
         "packagesPath": "C:\\Users\\kaua\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kaua\\Desktop\\gitclone\\gitclone\\Sistema para Gerenciar Hotel(HotelHub)\\obj\\",
+        "outputPath": "C:\\Users\\kaua\\Source\\Repos\\lp3\\Sistema para Gerenciar Hotel(HotelHub)\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\kaua\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -75,3 +75,31 @@ C:\Users\kaua\Desktop\gitclone\gitclone\Sistema para Gerenciar Hotel(HotelHub)\o
 C:\Users\kaua\Desktop\gitclone\gitclone\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema para Gerenciar Hotel(HotelHub).pdb
 C:\Users\kaua\Desktop\gitclone\gitclone\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema para Gerenciar Hotel(HotelHub).genruntimeconfig.cache
 C:\Users\kaua\Desktop\gitclone\gitclone\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\ref\Sistema para Gerenciar Hotel(HotelHub).dll
+C:\Users\kaua\Source\Repos\lp3\Sistema para Gerenciar Hotel(HotelHub)\bin\Debug\net8.0-windows\Sistema para Gerenciar Hotel(HotelHub).exe
+C:\Users\kaua\Source\Repos\lp3\Sistema para Gerenciar Hotel(HotelHub)\bin\Debug\net8.0-windows\Sistema para Gerenciar Hotel(HotelHub).deps.json
+C:\Users\kaua\Source\Repos\lp3\Sistema para Gerenciar Hotel(HotelHub)\bin\Debug\net8.0-windows\Sistema para Gerenciar Hotel(HotelHub).runtimeconfig.json
+C:\Users\kaua\Source\Repos\lp3\Sistema para Gerenciar Hotel(HotelHub)\bin\Debug\net8.0-windows\Sistema para Gerenciar Hotel(HotelHub).dll
+C:\Users\kaua\Source\Repos\lp3\Sistema para Gerenciar Hotel(HotelHub)\bin\Debug\net8.0-windows\Sistema para Gerenciar Hotel(HotelHub).pdb
+C:\Users\kaua\Source\Repos\lp3\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema_para_Gerenciar_Hotel_HotelHub_.Properties.Resources.resources
+C:\Users\kaua\Source\Repos\lp3\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema_para_Gerenciar_Hotel_HotelHub_.View.Controls.AtualizarFunc.resources
+C:\Users\kaua\Source\Repos\lp3\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema_para_Gerenciar_Hotel_HotelHub_.View.Controls.AtualizarReservas.resources
+C:\Users\kaua\Source\Repos\lp3\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema_para_Gerenciar_Hotel_HotelHub_.View.CadastrarReservasControl.resources
+C:\Users\kaua\Source\Repos\lp3\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Hotelhub.CadastroFuncControl.resources
+C:\Users\kaua\Source\Repos\lp3\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema_para_Gerenciar_Hotel_HotelHub_.View.Controls.ConsultarReservasControl.resources
+C:\Users\kaua\Source\Repos\lp3\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema_para_Gerenciar_Hotel_HotelHub_.View.Controls.RemoverReservasControl.resources
+C:\Users\kaua\Source\Repos\lp3\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema_para_Gerenciar_Hotel_HotelHub_.View.FuncionarioPage.resources
+C:\Users\kaua\Source\Repos\lp3\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema_para_Gerenciar_Hotel_HotelHub_.View.HomePage.resources
+C:\Users\kaua\Source\Repos\lp3\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema_para_Gerenciar_Hotel_HotelHub_.TelaLogin.resources
+C:\Users\kaua\Source\Repos\lp3\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema para Gerenciar Hotel(HotelHub).csproj.GenerateResource.cache
+C:\Users\kaua\Source\Repos\lp3\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema para Gerenciar Hotel(HotelHub).GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kaua\Source\Repos\lp3\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema para Gerenciar Hotel(HotelHub).AssemblyInfoInputs.cache
+C:\Users\kaua\Source\Repos\lp3\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema para Gerenciar Hotel(HotelHub).AssemblyInfo.cs
+C:\Users\kaua\Source\Repos\lp3\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema para Gerenciar Hotel(HotelHub).csproj.CoreCompileInputs.cache
+C:\Users\kaua\Source\Repos\lp3\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema para Gerenciar Hotel(HotelHub).sourcelink.json
+C:\Users\kaua\Source\Repos\lp3\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema para Gerenciar Hotel(HotelHub).dll
+C:\Users\kaua\Source\Repos\lp3\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\refint\Sistema para Gerenciar Hotel(HotelHub).dll
+C:\Users\kaua\Source\Repos\lp3\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema para Gerenciar Hotel(HotelHub).pdb
+C:\Users\kaua\Source\Repos\lp3\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema para Gerenciar Hotel(HotelHub).genruntimeconfig.cache
+C:\Users\kaua\Source\Repos\lp3\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\ref\Sistema para Gerenciar Hotel(HotelHub).dll
+C:\Users\kaua\Source\Repos\lp3\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema_para_Gerenciar_Hotel_HotelHub_.View.ReservaPage.resources
+C:\Users\kaua\Source\Repos\lp3\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema_para_Gerenciar_Hotel_HotelHub_.View.Controls.AtualizarReserva.resources

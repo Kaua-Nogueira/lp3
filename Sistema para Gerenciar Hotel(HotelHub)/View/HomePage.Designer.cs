@@ -34,6 +34,7 @@
             funcionáriosToolStripMenuItem = new ToolStripMenuItem();
             sairToolStripMenuItem = new ToolStripMenuItem();
             pictureBox1 = new PictureBox();
+            toolStripMenuItem1 = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -41,7 +42,7 @@
             // menuStrip1
             // 
             menuStrip1.ImageScalingSize = new Size(20, 20);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { reservasToolStripMenuItem, clientesToolStripMenuItem, funcionáriosToolStripMenuItem, sairToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { reservasToolStripMenuItem, clientesToolStripMenuItem, funcionáriosToolStripMenuItem, toolStripMenuItem1, sairToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Padding = new Padding(5, 2, 0, 2);
@@ -93,6 +94,14 @@
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
             // 
+            // toolStripMenuItem1
+            // 
+            toolStripMenuItem1.Font = new Font("Arial Narrow", 12F, FontStyle.Bold);
+            toolStripMenuItem1.Name = "toolStripMenuItem1";
+            toolStripMenuItem1.Size = new Size(70, 24);
+            toolStripMenuItem1.Text = "Quartos";
+            toolStripMenuItem1.Click += toolStripMenuItem1_Click;
+            // 
             // HomePage
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -122,5 +131,6 @@
         private ToolStripMenuItem funcionáriosToolStripMenuItem;
         private ToolStripMenuItem sairToolStripMenuItem;
         private PictureBox pictureBox1;
+        private ToolStripMenuItem toolStripMenuItem1;
     }
 }

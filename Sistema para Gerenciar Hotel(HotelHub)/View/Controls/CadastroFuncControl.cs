@@ -19,12 +19,21 @@ namespace Hotelhub
         {
             InitializeComponent();
             funcionarioController = controller;
-            
-
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            // Verifica se todos os campos estão preenchidos
+            if (string.IsNullOrWhiteSpace(tb_nome.Text) ||
+                string.IsNullOrWhiteSpace(tb_sobrenome.Text) ||
+                string.IsNullOrWhiteSpace(tb_cpf.Text) ||
+                string.IsNullOrWhiteSpace(tb_email.Text) ||
+                (!rb_solteiro.Checked && !rb_casado.Checked && !rb_divorciado.Checked && !rb_viuvo.Checked))
+            {
+                MessageBox.Show("Todos os campos são obrigatórios.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             // Coleta os dados dos campos
             var funcionario = new Funcionario
             {
@@ -48,11 +57,11 @@ namespace Hotelhub
                 {
                     funcionario.Id = this.funcionario.Id;
                     funcionarioController.AtualizarFuncionario(funcionario);
-                    MessageBox.Show("Funcionário Atualizado com sucesso!");
+                    MessageBox.Show("Funcionário atualizado com sucesso!");
                     // Limpa os campos após o cadastro
                     LimparCampos();
 
-                    // Dispara o evento de cadastro realizado
+                    // Dispara o evento de atualização realizado
                     AtualizarRealizado?.Invoke(this, EventArgs.Empty);
                 }
                 else
@@ -65,7 +74,6 @@ namespace Hotelhub
                     // Dispara o evento de cadastro realizado
                     CadastroRealizado?.Invoke(this, EventArgs.Empty);
                 }
-                
             }
             catch (Exception ex)
             {
@@ -86,9 +94,8 @@ namespace Hotelhub
             rb_viuvo.Checked = false;
         }
 
-        public void editar (Funcionario funcionario)
+        public void editar(Funcionario funcionario)
         {
-
             this.funcionario = funcionario;
             isEdit = true;
             tb_cpf.Text = funcionario.CPF;
@@ -112,7 +119,6 @@ namespace Hotelhub
                     rb_viuvo.Checked = true;
                     break;
                 default:
-                    // Nenhum estado civil selecionado
                     rb_solteiro.Checked = false;
                     rb_casado.Checked = false;
                     rb_divorciado.Checked = false;

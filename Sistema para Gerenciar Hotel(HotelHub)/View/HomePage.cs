@@ -14,16 +14,24 @@ namespace Sistema_para_Gerenciar_Hotel_HotelHub_.View
     public partial class HomePage : Form
     {
         FuncionarioController funcionarioController;
+        ReservaController reservaController;
         public HomePage()
         {
             InitializeComponent();
             funcionarioController = new FuncionarioController();
+            reservaController = new ReservaController();
         }
         private void HomePage_Load(object sender, EventArgs e)
         {
 
         }
-
+        private void CloseAllMdiChildren()
+        {
+            foreach (Form child in MdiChildren)
+            {
+                child.Close();
+            }
+        }
         private void sairToolStripMenuItem_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("Tem certeza que você deseja sair?",
@@ -36,14 +44,16 @@ namespace Sistema_para_Gerenciar_Hotel_HotelHub_.View
 
         private void reservasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            TelaDeReservas tela = new TelaDeReservas();
+            CloseAllMdiChildren();  
+            ReservaPage tela = new ReservaPage(reservaController);
             tela.MdiParent = this;
             tela.Show();
+            pictureBox1.Hide();
         }
 
         private void funcionáriosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            CloseAllMdiChildren();
             FuncionarioPage telafunc = new FuncionarioPage(funcionarioController);
             telafunc.MdiParent = this;
             telafunc.Show();
@@ -56,6 +66,16 @@ namespace Sistema_para_Gerenciar_Hotel_HotelHub_.View
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void quartosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
         {
 
         }

@@ -28,6 +28,7 @@ namespace Sistema_para_Gerenciar_Hotel_HotelHub_.View
 
         private void button1_Click(object sender, EventArgs e)
         {
+            setEnableButtons(false);
             CadastroFuncControl func = new CadastroFuncControl(funcionarioController);
             func.CadastroRealizado += restoreTable; // Inscreve-se no evento
 
@@ -53,7 +54,7 @@ namespace Sistema_para_Gerenciar_Hotel_HotelHub_.View
             }
             else
             {
-                MessageBox.Show("Funcionário não encontrado");
+                MessageBox.Show("Nenhum funcionário selecionado", "warning");
             }
 
         }
@@ -71,6 +72,14 @@ namespace Sistema_para_Gerenciar_Hotel_HotelHub_.View
 
         private AtualizarFunc tabela()
         {
+            if (funcionarioController.ListarFuncionarios().Count == 0)
+            {
+                setEnableButtons(false);
+            }
+            else
+            {
+                setEnableButtons(true);
+            }
             AtualizarFunc Upfunc = new AtualizarFunc(funcionarioController);
             // Inscreve-se no evento de edição
             // Upfunc.edicao += AtualizarFunc_edicao;
@@ -119,8 +128,19 @@ namespace Sistema_para_Gerenciar_Hotel_HotelHub_.View
             }
             else
             {
-                MessageBox.Show("Funcionário não encontrado");
+                MessageBox.Show("Nenhum funcionário selecionado", "warning");
             }
+        }
+
+        private void setEnableButtons(bool enable)
+        {
+            button2.Enabled = enable;
+            button3.Enabled = enable;
+        }
+
+        private void FuncionarioPage_Load_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

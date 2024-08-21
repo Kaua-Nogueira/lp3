@@ -12,7 +12,7 @@ namespace Sistema_para_Gerenciar_Hotel_HotelHub_
         public TelaLogin()
         {
             InitializeComponent();
-            funcionario = new Usuario("kaua", "123", "funcionário");
+            funcionario = new Usuario("admin", "123", "funcionário");
         }
 
         private void Form1_Load(object sender, EventArgs e)

@@ -30,13 +30,13 @@
         {
             components = new System.ComponentModel.Container();
             dataGridView1 = new DataGridView();
-            funcionarioBindingSource = new BindingSource(components);
-            label1 = new Label();
             idDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             nameDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             Sobrenome = new DataGridViewTextBoxColumn();
             cPFDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             emailDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            funcionarioBindingSource = new BindingSource(components);
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)funcionarioBindingSource).BeginInit();
             SuspendLayout();
@@ -54,24 +54,10 @@
             dataGridView1.Location = new Point(44, 90);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataGridView1.Size = new Size(442, 177);
             dataGridView1.TabIndex = 0;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
-            // 
-            // funcionarioBindingSource
-            // 
-            funcionarioBindingSource.DataSource = typeof(Model.Funcionario);
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Arial Narrow", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.FromArgb(64, 64, 64);
-            label1.Location = new Point(183, 43);
-            label1.Name = "label1";
-            label1.Size = new Size(170, 23);
-            label1.TabIndex = 1;
-            label1.Text = "Lista de funcionários";
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -108,6 +94,21 @@
             emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
             emailDataGridViewTextBoxColumn.ReadOnly = true;
             // 
+            // funcionarioBindingSource
+            // 
+            funcionarioBindingSource.DataSource = typeof(Model.Funcionario);
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Arial Narrow", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.FromArgb(64, 64, 64);
+            label1.Location = new Point(183, 43);
+            label1.Name = "label1";
+            label1.Size = new Size(170, 23);
+            label1.TabIndex = 1;
+            label1.Text = "Lista de funcionários";
+            // 
             // AtualizarFunc
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -116,6 +117,7 @@
             Controls.Add(dataGridView1);
             Name = "AtualizarFunc";
             Size = new Size(532, 349);
+            Load += AtualizarFunc_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)funcionarioBindingSource).EndInit();
             ResumeLayout(false);

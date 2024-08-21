@@ -1,7 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>C:\Users\kaua\source\repos\lp3\Sistema para Gerenciar Hotel%28HotelHub%29\Properties\PublishProfiles\FolderProfile1.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
   <ItemGroup>
     <Compile Update="View\Controls\AtualizarFunc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="View\Controls\AtualizarReserva.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="View\Controls\AtualizarReservas.cs">
@@ -25,10 +31,10 @@
     <Compile Update="View\HomePage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="View\TelaDeLogin.cs">
+    <Compile Update="View\ReservaPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="View\TelaDeReservas.cs">
+    <Compile Update="View\TelaDeLogin.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
