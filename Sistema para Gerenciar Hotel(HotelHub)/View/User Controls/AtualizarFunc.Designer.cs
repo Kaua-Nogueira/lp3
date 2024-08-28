@@ -1,4 +1,6 @@
-﻿namespace Sistema_para_Gerenciar_Hotel_HotelHub_.View.Controls
+﻿using Sistema_para_Gerenciar_Hotel_HotelHub_.Model.Classesforview;
+
+namespace Sistema_para_Gerenciar_Hotel_HotelHub_.View.Controls
 {
     partial class AtualizarFunc
     {
@@ -96,7 +98,7 @@
             // 
             // funcionarioBindingSource
             // 
-            funcionarioBindingSource.DataSource = typeof(Model.Funcionario);
+            funcionarioBindingSource.DataSource = typeof(Funcionario);
             // 
             // label1
             // 

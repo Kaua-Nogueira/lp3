@@ -32,9 +32,9 @@
             reservasToolStripMenuItem = new ToolStripMenuItem();
             clientesToolStripMenuItem = new ToolStripMenuItem();
             funcionáriosToolStripMenuItem = new ToolStripMenuItem();
+            toolStripMenuItem1 = new ToolStripMenuItem();
             sairToolStripMenuItem = new ToolStripMenuItem();
             pictureBox1 = new PictureBox();
-            toolStripMenuItem1 = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -65,6 +65,7 @@
             clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
             clientesToolStripMenuItem.Size = new Size(71, 24);
             clientesToolStripMenuItem.Text = "Clientes";
+            clientesToolStripMenuItem.Click += clientesToolStripMenuItem_Click;
             // 
             // funcionáriosToolStripMenuItem
             // 
@@ -73,6 +74,14 @@
             funcionáriosToolStripMenuItem.Size = new Size(103, 24);
             funcionáriosToolStripMenuItem.Text = "Funcionários";
             funcionáriosToolStripMenuItem.Click += funcionáriosToolStripMenuItem_Click;
+            // 
+            // toolStripMenuItem1
+            // 
+            toolStripMenuItem1.Font = new Font("Arial Narrow", 12F, FontStyle.Bold);
+            toolStripMenuItem1.Name = "toolStripMenuItem1";
+            toolStripMenuItem1.Size = new Size(70, 24);
+            toolStripMenuItem1.Text = "Quartos";
+            toolStripMenuItem1.Click += toolStripMenuItem1_Click;
             // 
             // sairToolStripMenuItem
             // 
@@ -93,14 +102,6 @@
             pictureBox1.TabIndex = 7;
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
-            // 
-            // toolStripMenuItem1
-            // 
-            toolStripMenuItem1.Font = new Font("Arial Narrow", 12F, FontStyle.Bold);
-            toolStripMenuItem1.Name = "toolStripMenuItem1";
-            toolStripMenuItem1.Size = new Size(70, 24);
-            toolStripMenuItem1.Text = "Quartos";
-            toolStripMenuItem1.Click += toolStripMenuItem1_Click;
             // 
             // HomePage
             // 

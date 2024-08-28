@@ -3,7 +3,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using Hotelhub;
 using Sistema_para_Gerenciar_Hotel_HotelHub_.Controller;
-using Sistema_para_Gerenciar_Hotel_HotelHub_.Model;
+using Sistema_para_Gerenciar_Hotel_HotelHub_.Model.Classesforview;
 using Sistema_para_Gerenciar_Hotel_HotelHub_.View.Controls;
 
 namespace Sistema_para_Gerenciar_Hotel_HotelHub_.View
@@ -13,7 +13,8 @@ namespace Sistema_para_Gerenciar_Hotel_HotelHub_.View
         public FuncionarioController funcionarioController;
         private AtualizarFunc table;
 
-        public FuncionarioPage(FuncionarioController controller)
+
+        public FuncionarioPage(FuncionarioController funcionarioControl)
         {
             InitializeComponent();
 
@@ -21,126 +22,128 @@ namespace Sistema_para_Gerenciar_Hotel_HotelHub_.View
             this.StartPosition = FormStartPosition.Manual;
             this.Location = new Point(0, 0);
 
-            funcionarioController = controller;
+            this.funcionarioController = funcionarioControl;
 
             table = tabela();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        
+        private void btCadastrar_Click(object sender, EventArgs e)
         {
-            setEnableButtons(false);
-            CadastroFuncControl func = new CadastroFuncControl(funcionarioController);
-            func.CadastroRealizado += restoreTable; // Inscreve-se no evento
+            setenablebuttons(false);
+            CadastroFuncionario funcCad = new CadastroFuncionario(funcionarioController);
+            funcCad.CadastroRealizado += restoreTable;
 
-            panel1.Controls.Clear();
-            func.Dock = DockStyle.Fill;
-            panel1.Controls.Add(func);
+            panelCliente.Controls.Clear();
+            funcCad.Dock = DockStyle.Fill; // Ajusta o conteúdo dentro do contêiner
+            panelCliente.Controls.Add(funcCad);
         }
 
-        private void restoreTable(object sender, EventArgs e)
+        private void btAtualizar_Click(object sender, EventArgs e)
         {
-            // Retorna ao controle anterior ou à tela principal
-            panel1.Controls.Clear();
-            table = tabela(); // Adiciona a tabela de volta ao painel
-        }
+            int funcAtualizar = table.getFuncionarioId();
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            int funAtualizar = table.getFuncionarioId();
-
-            if (funAtualizar != 0)
+            if (funcAtualizar != 0)
             {
-                AtualizarFunc_edicao(funAtualizar);
+                AtualizarFunc_edicao(funcAtualizar);
             }
             else
             {
-                MessageBox.Show("Nenhum funcionário selecionado", "warning");
+                MessageBox.Show("Nenhum funcionário selecionado", "Aviso");
             }
-
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void btExcluir_Click(object sender, EventArgs e)
         {
-            panel1.Controls.Clear();
-            table = tabela();
+            int funcDeletar = table.getFuncionarioId();
+            if (funcDeletar != 0)
+            {
+                if (funcionarioController.RemoverFuncionario(funcDeletar))
+                {
+                    MessageBox.Show("Funcionário excluído com sucesso");
+                    table.CarregarDados();
+
+                }
+                else
+                {
+                    MessageBox.Show("Erro ao remover funcionário");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Nenhum funcionário selecionado", "Aviso");
+            }
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void setenablebuttons(bool enable)
         {
-
+            btAtualizar.Enabled = enable;
+            btExcluir.Enabled = enable;
         }
 
         private AtualizarFunc tabela()
         {
             if (funcionarioController.ListarFuncionarios().Count == 0)
             {
-                setEnableButtons(false);
+                setenablebuttons(false);
             }
             else
             {
-                setEnableButtons(true);
+                setenablebuttons(true);
             }
-            AtualizarFunc Upfunc = new AtualizarFunc(funcionarioController);
-            // Inscreve-se no evento de edição
-            // Upfunc.edicao += AtualizarFunc_edicao;
-            panel1.Controls.Clear();
-            Upfunc.Dock = DockStyle.Fill;
-            panel1.Controls.Add(Upfunc);
+            AtualizarFunc UpFunc = new AtualizarFunc(funcionarioController);
 
-            return Upfunc;
-        }
+            panelCliente.Controls.Clear();
+            UpFunc.Dock = DockStyle.Fill;
+            panelCliente.Controls.Add(UpFunc);
 
-        private void FuncionarioPage_Load(object sender, EventArgs e)
-        {
-
+            return UpFunc;
         }
 
         private void AtualizarFunc_edicao(int funcionarioId)
         {
-            Funcionario funcionario = funcionarioController.BuscarFuncionarioPorId(funcionarioId);
-            // Cria uma nova instância de CadastroFuncControl
-            CadastroFuncControl cadastroFuncControl = new CadastroFuncControl(funcionarioController);
+            // Campos a serem resgatados
+            int id;
+            String nome, sobrenome, cpf, email, estadoCivil;
+            DateTime dataNascimento;
 
-            cadastroFuncControl.AtualizarRealizado += restoreTable;
+            var funcionario = funcionarioController.BuscarFuncionarioPorId(funcionarioId);
+            id = funcionario.Id;
+            nome = funcionario.Nome;
+            sobrenome = funcionario.Sobrenome;
+            cpf = funcionario.Cpf;
+            email = funcionario.Email;
+            dataNascimento = funcionario.DataNascimento;
+            estadoCivil = funcionario.EstadoCivil;
+
+            // Cria uma nova instância de cadastroFuncionario
+            CadastroFuncionario cadastroFuncionario = new CadastroFuncionario(funcionarioController);
+
+            cadastroFuncionario.AtualizarRealizado += restoreTable;
 
             // Preenche os campos de cadastro com os dados do funcionário selecionado
-            cadastroFuncControl.editar(funcionario);
+            cadastroFuncionario.editar(id, nome, sobrenome, cpf, email, dataNascimento, estadoCivil);
 
             // Limpa o painel e adiciona o controle de cadastro
-            panel1.Controls.Clear();
-            cadastroFuncControl.Dock = DockStyle.Fill;
-            panel1.Controls.Add(cadastroFuncControl);
+            panelCliente.Controls.Clear();
+            cadastroFuncionario.Dock = DockStyle.Fill;
+            panelCliente.Controls.Add(cadastroFuncionario);
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void restoreTable(object sender, EventArgs e)
         {
-            int funAtualizar = table.getFuncionarioId();
-
-            if (funAtualizar != 0)
-            {
-                DialogResult result = MessageBox.Show("Você deseja excluir o funcionário?", "Confirmação", MessageBoxButtons.YesNo);
-                if (result == DialogResult.Yes)
-                {
-                    funcionarioController.RemoverFuncionario(funAtualizar);
-                    panel1.Controls.Clear();
-                    table = tabela();
-                }
-            }
-            else
-            {
-                MessageBox.Show("Nenhum funcionário selecionado", "warning");
-            }
+            // Retorna ao controle anterior ou à tela principal
+            panelCliente.Controls.Clear();
+            table = tabela(); // Adiciona a tabela de volta ao painel
         }
-
-        private void setEnableButtons(bool enable)
+        private void btVoltar_Click(object sender, EventArgs e)
         {
-            button2.Enabled = enable;
-            button3.Enabled = enable;
-        }
 
+        }
         private void FuncionarioPage_Load_1(object sender, EventArgs e)
         {
 
         }
     }
+
 }

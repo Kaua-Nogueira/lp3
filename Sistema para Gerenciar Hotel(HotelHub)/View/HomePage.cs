@@ -15,11 +15,13 @@ namespace Sistema_para_Gerenciar_Hotel_HotelHub_.View
     {
         FuncionarioController funcionarioController;
         ReservaController reservaController;
+        ClienteController clienteController;
         public HomePage()
         {
             InitializeComponent();
             funcionarioController = new FuncionarioController();
             reservaController = new ReservaController();
+            clienteController = new ClienteController();
         }
         private void HomePage_Load(object sender, EventArgs e)
         {
@@ -44,7 +46,7 @@ namespace Sistema_para_Gerenciar_Hotel_HotelHub_.View
 
         private void reservasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            CloseAllMdiChildren();  
+            CloseAllMdiChildren();
             ReservaPage tela = new ReservaPage(reservaController);
             tela.MdiParent = this;
             tela.Show();
@@ -78,6 +80,15 @@ namespace Sistema_para_Gerenciar_Hotel_HotelHub_.View
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CloseAllMdiChildren();
+            ClientePage telaclient = new ClientePage(clienteController);
+            telaclient.MdiParent = this;
+            telaclient.Show();
+            pictureBox1.Hide();
         }
     }
 }

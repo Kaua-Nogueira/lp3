@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Hotelhub;
 using Sistema_para_Gerenciar_Hotel_HotelHub_.Controller;
-using Sistema_para_Gerenciar_Hotel_HotelHub_.Model;
+using Sistema_para_Gerenciar_Hotel_HotelHub_.Model.Classesforview;
 using Sistema_para_Gerenciar_Hotel_HotelHub_.View.Controls;
 
 namespace Sistema_para_Gerenciar_Hotel_HotelHub_.View
@@ -78,8 +78,8 @@ namespace Sistema_para_Gerenciar_Hotel_HotelHub_.View
 
         private void setEnableButtons(bool enable)
         {
-            button2.Enabled = enable;
-            button3.Enabled = enable;
+            btAtualizar.Enabled = enable;
+            btExcluir.Enabled = enable;
         }
 
         private void button2_Click(object sender, EventArgs e)

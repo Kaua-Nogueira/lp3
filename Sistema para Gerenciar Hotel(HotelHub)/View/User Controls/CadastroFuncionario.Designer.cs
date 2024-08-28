@@ -1,6 +1,6 @@
 ﻿namespace Hotelhub
 {
-    partial class CadastroFuncControl
+    partial class CadastroFuncionario
     {
         /// <summary> 
         /// Required designer variable.
@@ -194,7 +194,7 @@
             tb_email.Size = new Size(193, 23);
             tb_email.TabIndex = 21;
             // 
-            // CadastroFuncControl
+            // CadastroFuncionario
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -211,7 +211,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(button1);
-            Name = "CadastroFuncControl";
+            Name = "CadastroFuncionario";
             Size = new Size(560, 360);
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();

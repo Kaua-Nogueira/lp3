@@ -28,23 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button4 = new Button();
+            btVoltar = new Button();
             panel1 = new Panel();
-            button3 = new Button();
-            button2 = new Button();
-            button1 = new Button();
+            btExcluir = new Button();
+            btAtualizar = new Button();
+            btCadastrar = new Button();
             pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // button4
+            // btVoltar
             // 
-            button4.Location = new Point(30, 368);
-            button4.Name = "button4";
-            button4.Size = new Size(112, 40);
-            button4.TabIndex = 11;
-            button4.Text = "Voltar";
-            button4.UseVisualStyleBackColor = true;
+            btVoltar.Location = new Point(30, 368);
+            btVoltar.Name = "btVoltar";
+            btVoltar.Size = new Size(112, 40);
+            btVoltar.TabIndex = 11;
+            btVoltar.Text = "Voltar";
+            btVoltar.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
@@ -54,35 +54,35 @@
             panel1.TabIndex = 10;
             panel1.Paint += panel1_Paint;
             // 
-            // button3
+            // btExcluir
             // 
-            button3.Location = new Point(30, 249);
-            button3.Name = "button3";
-            button3.Size = new Size(112, 40);
-            button3.TabIndex = 9;
-            button3.Text = "Excluir";
-            button3.UseVisualStyleBackColor = true;
-            button3.Click += button3_Click;
+            btExcluir.Location = new Point(30, 249);
+            btExcluir.Name = "btExcluir";
+            btExcluir.Size = new Size(112, 40);
+            btExcluir.TabIndex = 9;
+            btExcluir.Text = "Excluir";
+            btExcluir.UseVisualStyleBackColor = true;
+            btExcluir.Click += button3_Click;
             // 
-            // button2
+            // btAtualizar
             // 
-            button2.Location = new Point(30, 203);
-            button2.Name = "button2";
-            button2.Size = new Size(112, 40);
-            button2.TabIndex = 8;
-            button2.Text = "Atualizar";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            btAtualizar.Location = new Point(30, 203);
+            btAtualizar.Name = "btAtualizar";
+            btAtualizar.Size = new Size(112, 40);
+            btAtualizar.TabIndex = 8;
+            btAtualizar.Text = "Atualizar";
+            btAtualizar.UseVisualStyleBackColor = true;
+            btAtualizar.Click += button2_Click;
             // 
-            // button1
+            // btCadastrar
             // 
-            button1.Location = new Point(30, 157);
-            button1.Name = "button1";
-            button1.Size = new Size(112, 40);
-            button1.TabIndex = 7;
-            button1.Text = "Cadastrar";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            btCadastrar.Location = new Point(30, 157);
+            btCadastrar.Name = "btCadastrar";
+            btCadastrar.Size = new Size(112, 40);
+            btCadastrar.TabIndex = 7;
+            btCadastrar.Text = "Cadastrar";
+            btCadastrar.UseVisualStyleBackColor = true;
+            btCadastrar.Click += button1_Click;
             // 
             // pictureBox1
             // 
@@ -100,11 +100,11 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(254, 226, 215);
             ClientSize = new Size(800, 450);
-            Controls.Add(button4);
+            Controls.Add(btVoltar);
             Controls.Add(panel1);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(btExcluir);
+            Controls.Add(btAtualizar);
+            Controls.Add(btCadastrar);
             Controls.Add(pictureBox1);
             Name = "ReservaPage";
             Text = "ReservaPage";
@@ -115,11 +115,12 @@
 
         #endregion
 
-        private Button button4;
+        private Button btVoltar;
         private Panel panel1;
-        private Button button3;
-        private Button button2;
+        private Button btExcluir;
+        private Button btAtualizar;
         private Button button1;
         private PictureBox pictureBox1;
+        private Button btCadastrar;
     }
 }
