@@ -1,4 +1,4 @@
-﻿using Sistema_para_Gerenciar_Hotel_HotelHub_.Model.Classesforview;
+﻿using Sistema_para_Gerenciar_Hotel_HotelHub_.Model.UserViewsDTO;
 
 namespace Sistema_para_Gerenciar_Hotel_HotelHub_.View.User_Controls
 {

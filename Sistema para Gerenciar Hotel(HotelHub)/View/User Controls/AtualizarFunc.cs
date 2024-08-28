@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Hotelhub;
 using Sistema_para_Gerenciar_Hotel_HotelHub_.Controller;
-using Sistema_para_Gerenciar_Hotel_HotelHub_.Model.Classesforview;
+using Sistema_para_Gerenciar_Hotel_HotelHub_.Model.UserViewsDTO;
 
 namespace Sistema_para_Gerenciar_Hotel_HotelHub_.View.Controls
 {

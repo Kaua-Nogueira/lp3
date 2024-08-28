@@ -1,5 +1,5 @@
 ﻿using Sistema_para_Gerenciar_Hotel_HotelHub_.Controller;
-using Sistema_para_Gerenciar_Hotel_HotelHub_.Model.Classesforview;
+using Sistema_para_Gerenciar_Hotel_HotelHub_.Model.UserViewsDTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

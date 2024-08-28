@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Sistema_para_Gerenciar_Hotel_HotelHub_.Model.Classesforview;
+using Sistema_para_Gerenciar_Hotel_HotelHub_.Model.UserViewsDTO;
 
 namespace Sistema_para_Gerenciar_Hotel_HotelHub_.Model.DTO
 {
