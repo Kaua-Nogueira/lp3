@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -89,6 +90,33 @@ namespace Sistema_para_Gerenciar_Hotel_HotelHub_.View
             telaclient.MdiParent = this;
             telaclient.Show();
             pictureBox1.Hide();
+        }
+
+        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start(new ProcessStartInfo
+            {
+                FileName = "https://www.instagram.com/victorjqm543?igsh=MXVoanBqejQ3MDVxbg==",
+                UseShellExecute = true
+            });
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start(new ProcessStartInfo
+            {
+                FileName = "https://www.instagram.com/eureinaldodias?igsh=dGxmbmtkNDBlcG9o&utm_source=qr",
+                UseShellExecute = true
+            });
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start(new ProcessStartInfo
+            {
+                FileName = "https://www.instagram.com/kaua_nogs",
+                UseShellExecute = true
+            });
         }
     }
 }
