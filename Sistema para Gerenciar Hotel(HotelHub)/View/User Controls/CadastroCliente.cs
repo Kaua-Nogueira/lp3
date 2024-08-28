@@ -1,5 +1,4 @@
 ﻿using Sistema_para_Gerenciar_Hotel_HotelHub_.Controller;
-using Sistema_para_Gerenciar_Hotel_HotelHub_.Model.Classesforview;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

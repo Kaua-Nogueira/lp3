@@ -14,10 +14,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Include="C:\Users\Reinaldo Dias\Documents\lp3--\hotelhub.cs" Link="hotelhub.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="MySqlConnector" Version="2.3.7" />
   </ItemGroup>
 

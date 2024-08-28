@@ -93,8 +93,8 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.BackgroundImage = Properties.Resources.HotelHub_System__2_;
             pictureBox1.Dock = DockStyle.Fill;
-            pictureBox1.Image = Properties.Resources.logo;
             pictureBox1.Location = new Point(0, 28);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(848, 461);
@@ -108,6 +108,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(254, 226, 215);
+            BackgroundImage = Properties.Resources.HotelHub_System__2_;
             ClientSize = new Size(848, 489);
             Controls.Add(pictureBox1);
             Controls.Add(menuStrip1);
