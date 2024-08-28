@@ -1,52 +1,39 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Sistema_para_Gerenciar_Hotel_HotelHub_.Model.UserViewsDTO;
+﻿using Sistema_para_Gerenciar_Hotel_HotelHub_.Model.UserViewsDTO;
+using System;
 
 namespace Sistema_para_Gerenciar_Hotel_HotelHub_.Model.DTO
 {
     internal class ReservaDTO
     {
-        private int id;
-        private Cliente cliente;
-        private DateTime datainicio;
-        private DateTime datafim;
-        private double valor_reserva;
-        private int num_hospedes;
-        private int num_Quartos;
-
-        public ReservaDTO(Cliente cliente, DateTime inicio, DateTime fim, double valor,
-                          int numhospede, int numquartos) 
-        {
-            this.cliente = cliente;
-            this.datainicio = inicio;
-            this.datafim = fim;
-            this.valor_reserva = valor;
-            this.num_hospedes = numhospede;
-            this.num_Quartos = numquartos;
-        
-        }
-        public ReservaDTO(int id, Cliente cliente, DateTime inicio, DateTime fim, double valor,
-                          int numhospede, int numquartos)
-        {
-            this.id = id;
-            this.cliente = cliente;
-            this.datainicio = inicio;
-            this.datafim = fim;
-            this.valor_reserva = valor;
-            this.num_hospedes = numhospede;
-            this.num_Quartos = numquartos;
-
-        }
-
         public int Id { get; set; }
-        public Cliente Cliente { get; set; }
-        public DateTime dataInicio { get; set; } = DateTime.MinValue;
-        public DateTime dataFim { get; set; } = DateTime.MinValue;
-        public double valorReserva { get; set; } = double.MinValue;
-        public int numHospedes { get; set; } = 0;
-        public int numQuartos { get; set; } = 0;
+        public ClienteDTO Cliente { get; set; }
+        public DateTime DataInicio { get; set; }
+        public DateTime DataFim { get; set; }
+        public double Valor { get; set; }
+        public int NumHospedes { get; set; }
+        public int NumQuartos { get; set; }
+
+        // Construtor para criar uma reserva sem ID (para novas reservas)
+        public ReservaDTO(ClienteDTO cliente, DateTime inicio, DateTime fim, double valor,
+                          int numHospede)
+        {
+            Cliente = cliente;
+            DataInicio = inicio;
+            DataFim = fim;
+            Valor = valor;
+            NumHospedes = numHospede;
+        }
+
+        // Construtor para criar uma reserva com ID (para reservas existentes)
+        public ReservaDTO(int id, ClienteDTO cliente, DateTime CheckIn, DateTime CheckOut, double valor,
+                          int numHospede)
+        {
+            Id = id;
+            Cliente = cliente;
+            DataInicio = CheckIn;
+            DataFim = CheckOut;
+            Valor = valor;
+            NumHospedes = numHospede;
+        }
     }
 }

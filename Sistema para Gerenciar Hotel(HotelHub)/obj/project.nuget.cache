@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "5RY/pHtSBwQ=",
+  "dgSpecHash": "oWwaceQyge8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Reinaldo Dias\\source\\repos\\lp3\\Sistema para Gerenciar Hotel(HotelHub)\\Sistema para Gerenciar Hotel(HotelHub).csproj",
+  "projectFilePath": "D:\\lp3\\Sistema para Gerenciar Hotel(HotelHub)\\Sistema para Gerenciar Hotel(HotelHub).csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Reinaldo Dias\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.1\\microsoft.extensions.logging.abstractions.7.0.1.nupkg.sha512",
-    "C:\\Users\\Reinaldo Dias\\.nuget\\packages\\mysqlconnector\\2.3.7\\mysqlconnector.2.3.7.nupkg.sha512"
+    "C:\\Users\\kaua\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.1\\microsoft.extensions.logging.abstractions.7.0.1.nupkg.sha512",
+    "C:\\Users\\kaua\\.nuget\\packages\\mysqlconnector\\2.3.7\\mysqlconnector.2.3.7.nupkg.sha512"
   ],
   "logs": []
 }

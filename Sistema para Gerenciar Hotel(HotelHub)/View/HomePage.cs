@@ -80,7 +80,7 @@ namespace Sistema_para_Gerenciar_Hotel_HotelHub_.View
 
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Funcionalidade não implementada");
         }
 
         private void clientesToolStripMenuItem_Click(object sender, EventArgs e)

@@ -45,6 +45,7 @@
             btVoltar.TabIndex = 11;
             btVoltar.Text = "Voltar";
             btVoltar.UseVisualStyleBackColor = true;
+            btVoltar.Click += btVoltar_Click;
             // 
             // panel1
             // 

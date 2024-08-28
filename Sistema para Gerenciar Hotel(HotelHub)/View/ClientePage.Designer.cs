@@ -40,7 +40,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.logo;
-            pictureBox1.Location = new Point(28, 12);
+            pictureBox1.Location = new Point(38, 22);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(112, 115);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -49,7 +49,7 @@
             // 
             // btCadastrar
             // 
-            btCadastrar.Location = new Point(28, 153);
+            btCadastrar.Location = new Point(38, 153);
             btCadastrar.Name = "btCadastrar";
             btCadastrar.Size = new Size(112, 40);
             btCadastrar.TabIndex = 2;
@@ -59,7 +59,7 @@
             // 
             // btAtualizar
             // 
-            btAtualizar.Location = new Point(28, 199);
+            btAtualizar.Location = new Point(38, 199);
             btAtualizar.Name = "btAtualizar";
             btAtualizar.Size = new Size(112, 40);
             btAtualizar.TabIndex = 3;
@@ -69,7 +69,7 @@
             // 
             // btExcluir
             // 
-            btExcluir.Location = new Point(28, 245);
+            btExcluir.Location = new Point(38, 245);
             btExcluir.Name = "btExcluir";
             btExcluir.Size = new Size(112, 40);
             btExcluir.TabIndex = 4;
@@ -79,7 +79,7 @@
             // 
             // btVoltar
             // 
-            btVoltar.Location = new Point(28, 372);
+            btVoltar.Location = new Point(38, 372);
             btVoltar.Name = "btVoltar";
             btVoltar.Size = new Size(112, 40);
             btVoltar.TabIndex = 6;

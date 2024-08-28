@@ -17,7 +17,7 @@ namespace Sistema_para_Gerenciar_Hotel_HotelHub_.Model.Util
             //Conexao com o Banco de Dados
             string strconexao = "";
             //String de Conexao com o Banco de Dados
-            strconexao = "server=localhost;userid=root;password=pass;database=hotelhub_system";
+            strconexao = "server=localhost;userid=root;database=hotelhub_system";
             //Criação do Canal de Comunicação
             con = new MySqlConnection(strconexao);
         }

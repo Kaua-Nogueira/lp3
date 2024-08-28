@@ -151,7 +151,8 @@ namespace Sistema_para_Gerenciar_Hotel_HotelHub_.View
 
         private void btVoltar_Click(object sender, EventArgs e)
         {
-
+            panelCliente.Controls.Clear();
+            table = tabela();
         }
     }
 }

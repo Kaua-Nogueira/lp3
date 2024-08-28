@@ -29,7 +29,7 @@ namespace Sistema_para_Gerenciar_Hotel_HotelHub_.View
             this.StartPosition = FormStartPosition.Manual;
             this.Location = new Point(0, 0);
 
-            
+
 
             table = tabela();
         }
@@ -141,6 +141,12 @@ namespace Sistema_para_Gerenciar_Hotel_HotelHub_.View
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btVoltar_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear();
+            table = tabela();
         }
     }
 }

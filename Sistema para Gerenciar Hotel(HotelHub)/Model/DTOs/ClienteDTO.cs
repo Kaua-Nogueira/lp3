@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Sistema_para_Gerenciar_Hotel_HotelHub_.Model.DTO
 {
-    internal class ClienteDTO
+    public class ClienteDTO
     {
         private int id;
         private string nome;
@@ -16,6 +16,11 @@ namespace Sistema_para_Gerenciar_Hotel_HotelHub_.Model.DTO
         private string telefone;
         private DateTime dataNascimento;
         private string estadoCivil;
+
+        public ClienteDTO()
+        {
+
+        }
 
         public ClienteDTO(string nome, string sobrenome, string cpf, string email, string telefone, DateTime dataNascimento, string estadoCivil) 
         {

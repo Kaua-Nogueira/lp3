@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Reinaldo Dias\\source\\repos\\lp3\\Sistema para Gerenciar Hotel(HotelHub)\\Sistema para Gerenciar Hotel(HotelHub).csproj": {}
+    "D:\\lp3\\Sistema para Gerenciar Hotel(HotelHub)\\Sistema para Gerenciar Hotel(HotelHub).csproj": {}
   },
   "projects": {
-    "C:\\Users\\Reinaldo Dias\\source\\repos\\lp3\\Sistema para Gerenciar Hotel(HotelHub)\\Sistema para Gerenciar Hotel(HotelHub).csproj": {
+    "D:\\lp3\\Sistema para Gerenciar Hotel(HotelHub)\\Sistema para Gerenciar Hotel(HotelHub).csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Reinaldo Dias\\source\\repos\\lp3\\Sistema para Gerenciar Hotel(HotelHub)\\Sistema para Gerenciar Hotel(HotelHub).csproj",
+        "projectUniqueName": "D:\\lp3\\Sistema para Gerenciar Hotel(HotelHub)\\Sistema para Gerenciar Hotel(HotelHub).csproj",
         "projectName": "Sistema para Gerenciar Hotel(HotelHub)",
-        "projectPath": "C:\\Users\\Reinaldo Dias\\source\\repos\\lp3\\Sistema para Gerenciar Hotel(HotelHub)\\Sistema para Gerenciar Hotel(HotelHub).csproj",
-        "packagesPath": "C:\\Users\\Reinaldo Dias\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Reinaldo Dias\\source\\repos\\lp3\\Sistema para Gerenciar Hotel(HotelHub)\\obj\\",
+        "projectPath": "D:\\lp3\\Sistema para Gerenciar Hotel(HotelHub)\\Sistema para Gerenciar Hotel(HotelHub).csproj",
+        "packagesPath": "C:\\Users\\kaua\\.nuget\\packages\\",
+        "outputPath": "D:\\lp3\\Sistema para Gerenciar Hotel(HotelHub)\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Reinaldo Dias\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\kaua\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

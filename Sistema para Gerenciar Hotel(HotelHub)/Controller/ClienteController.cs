@@ -85,7 +85,23 @@ namespace Sistema_para_Gerenciar_Hotel_HotelHub_.Controller
 
             return cliList;
             
+        }
 
+        public Cliente toCliente(ClienteDTO dto)
+        {
+            Cliente cli = new Cliente
+            {
+                Id = dto.Id,
+                Nome = dto.Nome,
+                Sobrenome = dto.Sobrenome,
+                Cpf = dto.Cpf,
+                Telefone = dto.Telefone,
+                Email = dto.Email,
+                DataNascimento = dto.DataNascimento,
+                estadoCivil = dto.EstadoCivil,
+            };
+
+            return cli;
         }
     }
 }

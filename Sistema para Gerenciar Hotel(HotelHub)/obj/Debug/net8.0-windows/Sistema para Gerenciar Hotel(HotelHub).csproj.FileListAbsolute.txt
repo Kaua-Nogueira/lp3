@@ -138,3 +138,38 @@ C:\Users\Reinaldo Dias\source\repos\lp3\Sistema para Gerenciar Hotel(HotelHub)\b
 C:\Users\Reinaldo Dias\source\repos\lp3\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema para Gerenciar Hotel(HotelHub).csproj.AssemblyReference.cache
 C:\Users\Reinaldo Dias\source\repos\lp3\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema .7868BD0D.Up2Date
 C:\Users\Reinaldo Dias\source\repos\lp3\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Hotelhub.CadastroFuncionario.resources
+D:\lp3\Sistema para Gerenciar Hotel(HotelHub)\bin\Debug\net8.0-windows\Sistema para Gerenciar Hotel(HotelHub).exe
+D:\lp3\Sistema para Gerenciar Hotel(HotelHub)\bin\Debug\net8.0-windows\Sistema para Gerenciar Hotel(HotelHub).deps.json
+D:\lp3\Sistema para Gerenciar Hotel(HotelHub)\bin\Debug\net8.0-windows\Sistema para Gerenciar Hotel(HotelHub).runtimeconfig.json
+D:\lp3\Sistema para Gerenciar Hotel(HotelHub)\bin\Debug\net8.0-windows\Sistema para Gerenciar Hotel(HotelHub).dll
+D:\lp3\Sistema para Gerenciar Hotel(HotelHub)\bin\Debug\net8.0-windows\Sistema para Gerenciar Hotel(HotelHub).pdb
+D:\lp3\Sistema para Gerenciar Hotel(HotelHub)\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\lp3\Sistema para Gerenciar Hotel(HotelHub)\bin\Debug\net8.0-windows\MySqlConnector.dll
+D:\lp3\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema para Gerenciar Hotel(HotelHub).csproj.AssemblyReference.cache
+D:\lp3\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema_para_Gerenciar_Hotel_HotelHub_.Properties.Resources.resources
+D:\lp3\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema_para_Gerenciar_Hotel_HotelHub_.View.ClientePage.resources
+D:\lp3\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema_para_Gerenciar_Hotel_HotelHub_.View.FuncionarioPage.resources
+D:\lp3\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema_para_Gerenciar_Hotel_HotelHub_.View.HomePage.resources
+D:\lp3\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema_para_Gerenciar_Hotel_HotelHub_.View.ReservaPage.resources
+D:\lp3\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema_para_Gerenciar_Hotel_HotelHub_.TelaLogin.resources
+D:\lp3\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema_para_Gerenciar_Hotel_HotelHub_.View.User_Controls.AtualizarCliente.resources
+D:\lp3\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema_para_Gerenciar_Hotel_HotelHub_.View.Controls.AtualizarFunc.resources
+D:\lp3\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema_para_Gerenciar_Hotel_HotelHub_.View.Controls.AtualizarReserva.resources
+D:\lp3\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema_para_Gerenciar_Hotel_HotelHub_.View.Controls.AtualizarReservas.resources
+D:\lp3\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema_para_Gerenciar_Hotel_HotelHub_.View.CadastrarReservasControl.resources
+D:\lp3\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema_para_Gerenciar_Hotel_HotelHub_.View.User_Controls.cadastroCliente.resources
+D:\lp3\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Hotelhub.CadastroFuncionario.resources
+D:\lp3\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema_para_Gerenciar_Hotel_HotelHub_.View.Controls.ConsultarReservasControl.resources
+D:\lp3\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema_para_Gerenciar_Hotel_HotelHub_.View.Controls.RemoverReservasControl.resources
+D:\lp3\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema para Gerenciar Hotel(HotelHub).csproj.GenerateResource.cache
+D:\lp3\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema para Gerenciar Hotel(HotelHub).GeneratedMSBuildEditorConfig.editorconfig
+D:\lp3\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema para Gerenciar Hotel(HotelHub).AssemblyInfoInputs.cache
+D:\lp3\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema para Gerenciar Hotel(HotelHub).AssemblyInfo.cs
+D:\lp3\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema para Gerenciar Hotel(HotelHub).csproj.CoreCompileInputs.cache
+D:\lp3\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema para Gerenciar Hotel(HotelHub).sourcelink.json
+D:\lp3\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema .7868BD0D.Up2Date
+D:\lp3\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema para Gerenciar Hotel(HotelHub).dll
+D:\lp3\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\refint\Sistema para Gerenciar Hotel(HotelHub).dll
+D:\lp3\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema para Gerenciar Hotel(HotelHub).pdb
+D:\lp3\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\Sistema para Gerenciar Hotel(HotelHub).genruntimeconfig.cache
+D:\lp3\Sistema para Gerenciar Hotel(HotelHub)\obj\Debug\net8.0-windows\ref\Sistema para Gerenciar Hotel(HotelHub).dll

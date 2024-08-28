@@ -39,11 +39,14 @@ namespace Sistema_para_Gerenciar_Hotel_HotelHub_.View.Controls
         {
             if (dataGridView1.SelectedRows.Count > 0)  // Permite a seleção da primeira linha também
             {
-                var selectedRow = dataGridView1.Rows[e.RowIndex];  // Usa o índice da linha clicada
-                var funcionario = (Funcionario)selectedRow.DataBoundItem;
-                this.funcionarioId = funcionario.Id;
+               if(e.RowIndex >=0)
+                {
+                    var selectedRow = dataGridView1.Rows[e.RowIndex];  // Usa o índice da linha clicada
+                    var funcionario = (Funcionario)selectedRow.DataBoundItem;
+                    this.funcionarioId = funcionario.Id;
 
-                MessageBox.Show("Nome: " + funcionario.Name, "Você selecionou um funcionário");  // Converte Id para string para exibir no MessageBox
+                    MessageBox.Show("Nome: " + funcionario.Name, "Você selecionou um funcionário");  // Converte Id para string para exibir no MessageBox
+                }
             }
         }
 
