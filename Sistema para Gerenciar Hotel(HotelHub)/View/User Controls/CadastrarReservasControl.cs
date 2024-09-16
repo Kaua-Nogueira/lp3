@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using Sistema_para_Gerenciar_Hotel_HotelHub_.Controller;
-using Sistema_para_Gerenciar_Hotel_HotelHub_.Model;
+using Sistema_para_Gerenciar_Hotel_HotelHub_.Model.UserViewsDTO;
 
 namespace Sistema_para_Gerenciar_Hotel_HotelHub_.View
 {
@@ -23,7 +23,7 @@ namespace Sistema_para_Gerenciar_Hotel_HotelHub_.View
 
             cliente = new Cliente
             {
-                ID = 1,
+                Id = 1,
                 Nome = "João Silva",
                 Cpf = "123.456.789-00",
                 Email = "joao.silva@example.com",

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Sistema_para_Gerenciar_Hotel_HotelHub_.Controller;
-using Sistema_para_Gerenciar_Hotel_HotelHub_.Model;
+using Sistema_para_Gerenciar_Hotel_HotelHub_.Model.UserViewsDTO;
 
 namespace Sistema_para_Gerenciar_Hotel_HotelHub_.View.Controls
 {
@@ -26,8 +26,8 @@ namespace Sistema_para_Gerenciar_Hotel_HotelHub_.View.Controls
         }
         private void CarregarDados()
         {
-            // Define a fonte de dados do DataGridView
-            dataGridView1.DataSource = reservaController.ListarReservas();
+            List<Reserva> source = reservaController.ListarReservas();
+            dataGridView1.DataSource = source;
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)

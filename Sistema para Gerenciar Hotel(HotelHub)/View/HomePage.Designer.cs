@@ -32,9 +32,13 @@
             reservasToolStripMenuItem = new ToolStripMenuItem();
             clientesToolStripMenuItem = new ToolStripMenuItem();
             funcionáriosToolStripMenuItem = new ToolStripMenuItem();
+            toolStripMenuItem1 = new ToolStripMenuItem();
             sairToolStripMenuItem = new ToolStripMenuItem();
             pictureBox1 = new PictureBox();
-            toolStripMenuItem1 = new ToolStripMenuItem();
+            linkLabel1 = new LinkLabel();
+            linkLabel2 = new LinkLabel();
+            linkLabel3 = new LinkLabel();
+            label1 = new Label();
             menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -65,6 +69,7 @@
             clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
             clientesToolStripMenuItem.Size = new Size(71, 24);
             clientesToolStripMenuItem.Text = "Clientes";
+            clientesToolStripMenuItem.Click += clientesToolStripMenuItem_Click;
             // 
             // funcionáriosToolStripMenuItem
             // 
@@ -73,6 +78,14 @@
             funcionáriosToolStripMenuItem.Size = new Size(103, 24);
             funcionáriosToolStripMenuItem.Text = "Funcionários";
             funcionáriosToolStripMenuItem.Click += funcionáriosToolStripMenuItem_Click;
+            // 
+            // toolStripMenuItem1
+            // 
+            toolStripMenuItem1.Font = new Font("Arial Narrow", 12F, FontStyle.Bold);
+            toolStripMenuItem1.Name = "toolStripMenuItem1";
+            toolStripMenuItem1.Size = new Size(70, 24);
+            toolStripMenuItem1.Text = "Quartos";
+            toolStripMenuItem1.Click += toolStripMenuItem1_Click;
             // 
             // sairToolStripMenuItem
             // 
@@ -84,8 +97,8 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.BackgroundImage = Properties.Resources.HotelHub_System__2_;
             pictureBox1.Dock = DockStyle.Fill;
-            pictureBox1.Image = Properties.Resources.logo;
             pictureBox1.Location = new Point(0, 28);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(848, 461);
@@ -94,20 +107,59 @@
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
             // 
-            // toolStripMenuItem1
+            // linkLabel1
             // 
-            toolStripMenuItem1.Font = new Font("Arial Narrow", 12F, FontStyle.Bold);
-            toolStripMenuItem1.Name = "toolStripMenuItem1";
-            toolStripMenuItem1.Size = new Size(70, 24);
-            toolStripMenuItem1.Text = "Quartos";
-            toolStripMenuItem1.Click += toolStripMenuItem1_Click;
+            linkLabel1.AutoSize = true;
+            linkLabel1.Location = new Point(104, 465);
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.Size = new Size(78, 15);
+            linkLabel1.TabIndex = 9;
+            linkLabel1.TabStop = true;
+            linkLabel1.Text = "Reinaldo Dias";
+            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
+            // 
+            // linkLabel2
+            // 
+            linkLabel2.AutoSize = true;
+            linkLabel2.Location = new Point(188, 465);
+            linkLabel2.Name = "linkLabel2";
+            linkLabel2.Size = new Size(83, 15);
+            linkLabel2.TabIndex = 10;
+            linkLabel2.TabStop = true;
+            linkLabel2.Text = "Kaua nogueira";
+            linkLabel2.LinkClicked += linkLabel2_LinkClicked;
+            // 
+            // linkLabel3
+            // 
+            linkLabel3.AutoSize = true;
+            linkLabel3.Location = new Point(277, 465);
+            linkLabel3.Name = "linkLabel3";
+            linkLabel3.Size = new Size(62, 15);
+            linkLabel3.TabIndex = 11;
+            linkLabel3.TabStop = true;
+            linkLabel3.Text = "Victor jose";
+            linkLabel3.LinkClicked += linkLabel3_LinkClicked;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(0, 465);
+            label1.Name = "label1";
+            label1.Size = new Size(102, 15);
+            label1.TabIndex = 12;
+            label1.Text = "Desenvolvido por:";
             // 
             // HomePage
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(254, 226, 215);
+            BackgroundImage = Properties.Resources.HotelHub_System__2_;
             ClientSize = new Size(848, 489);
+            Controls.Add(label1);
+            Controls.Add(linkLabel3);
+            Controls.Add(linkLabel2);
+            Controls.Add(linkLabel1);
             Controls.Add(pictureBox1);
             Controls.Add(menuStrip1);
             IsMdiContainer = true;
@@ -132,5 +184,9 @@
         private ToolStripMenuItem sairToolStripMenuItem;
         private PictureBox pictureBox1;
         private ToolStripMenuItem toolStripMenuItem1;
+        private LinkLabel linkLabel1;
+        private LinkLabel linkLabel2;
+        private LinkLabel linkLabel3;
+        private Label label1;
     }
 }

@@ -41,10 +41,10 @@
             // 
             pictureBox1.Anchor = AnchorStyles.Top;
             pictureBox1.Image = Properties.Resources.logo;
-            pictureBox1.Location = new Point(151, 26);
+            pictureBox1.Location = new Point(178, 11);
             pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(281, 180);
+            pictureBox1.Size = new Size(229, 188);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -53,17 +53,18 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Arial Narrow", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(130, 243);
+            label1.Font = new Font("Arial Narrow", 11.8F, FontStyle.Bold);
+            label1.ForeColor = Color.FromArgb(64, 64, 64);
+            label1.Location = new Point(178, 232);
             label1.Name = "label1";
-            label1.Size = new Size(78, 23);
+            label1.Size = new Size(57, 20);
             label1.TabIndex = 1;
-            label1.Text = "Usuario :";
+            label1.Text = "Usuario";
             label1.Click += label1_Click;
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(217, 243);
+            textBox1.Location = new Point(178, 257);
             textBox1.Margin = new Padding(3, 2, 3, 2);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(229, 23);
@@ -72,16 +73,17 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Arial Narrow", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(130, 282);
+            label2.Font = new Font("Arial Narrow", 11.8F, FontStyle.Bold);
+            label2.ForeColor = Color.FromArgb(64, 64, 64);
+            label2.Location = new Point(178, 297);
             label2.Name = "label2";
-            label2.Size = new Size(67, 23);
+            label2.Size = new Size(48, 20);
             label2.TabIndex = 3;
-            label2.Text = "Senha :";
+            label2.Text = "Senha";
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(217, 282);
+            textBox2.Location = new Point(178, 322);
             textBox2.Margin = new Padding(3, 2, 3, 2);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(229, 23);
@@ -90,8 +92,8 @@
             // 
             // button1
             // 
-            button1.Font = new Font("Arial Narrow", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(217, 338);
+            button1.Font = new Font("Arial Narrow", 12.8F, FontStyle.Bold);
+            button1.Location = new Point(217, 383);
             button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
             button1.Size = new Size(137, 40);

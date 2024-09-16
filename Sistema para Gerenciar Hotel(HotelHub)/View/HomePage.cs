@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -15,11 +16,13 @@ namespace Sistema_para_Gerenciar_Hotel_HotelHub_.View
     {
         FuncionarioController funcionarioController;
         ReservaController reservaController;
+        ClienteController clienteController;
         public HomePage()
         {
             InitializeComponent();
             funcionarioController = new FuncionarioController();
             reservaController = new ReservaController();
+            clienteController = new ClienteController();
         }
         private void HomePage_Load(object sender, EventArgs e)
         {
@@ -44,7 +47,7 @@ namespace Sistema_para_Gerenciar_Hotel_HotelHub_.View
 
         private void reservasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            CloseAllMdiChildren();  
+            CloseAllMdiChildren();
             ReservaPage tela = new ReservaPage(reservaController);
             tela.MdiParent = this;
             tela.Show();
@@ -77,7 +80,43 @@ namespace Sistema_para_Gerenciar_Hotel_HotelHub_.View
 
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Funcionalidade não implementada");
+        }
 
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CloseAllMdiChildren();
+            ClientePage telaclient = new ClientePage(clienteController);
+            telaclient.MdiParent = this;
+            telaclient.Show();
+            pictureBox1.Hide();
+        }
+
+        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start(new ProcessStartInfo
+            {
+                FileName = "https://www.instagram.com/victorjqm543?igsh=MXVoanBqejQ3MDVxbg==",
+                UseShellExecute = true
+            });
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start(new ProcessStartInfo
+            {
+                FileName = "https://www.instagram.com/eureinaldodias?igsh=dGxmbmtkNDBlcG9o&utm_source=qr",
+                UseShellExecute = true
+            });
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start(new ProcessStartInfo
+            {
+                FileName = "https://www.instagram.com/kaua_nogs",
+                UseShellExecute = true
+            });
         }
     }
 }

@@ -2,6 +2,7 @@
 {
     partial class FuncionarioPage
     {
+
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -29,11 +30,11 @@
         private void InitializeComponent()
         {
             pictureBox1 = new PictureBox();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            panel1 = new Panel();
-            button4 = new Button();
+            btCadastrar = new Button();
+            btAtualizar = new Button();
+            btExcluir = new Button();
+            panelCliente = new Panel();
+            btVoltar = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -47,53 +48,52 @@
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
-            // button1
+            // btCadastrar
             // 
-            button1.Location = new Point(33, 159);
-            button1.Name = "button1";
-            button1.Size = new Size(112, 40);
-            button1.TabIndex = 1;
-            button1.Text = "Cadastrar";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            btCadastrar.Location = new Point(33, 159);
+            btCadastrar.Name = "btCadastrar";
+            btCadastrar.Size = new Size(112, 40);
+            btCadastrar.TabIndex = 1;
+            btCadastrar.Text = "Cadastrar";
+            btCadastrar.UseVisualStyleBackColor = true;
+            btCadastrar.Click += btCadastrar_Click;
             // 
-            // button2
+            // btAtualizar
             // 
-            button2.Location = new Point(33, 205);
-            button2.Name = "button2";
-            button2.Size = new Size(112, 40);
-            button2.TabIndex = 2;
-            button2.Text = "Atualizar";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            btAtualizar.Location = new Point(33, 205);
+            btAtualizar.Name = "btAtualizar";
+            btAtualizar.Size = new Size(112, 40);
+            btAtualizar.TabIndex = 2;
+            btAtualizar.Text = "Atualizar";
+            btAtualizar.UseVisualStyleBackColor = true;
+            btAtualizar.Click += btAtualizar_Click;
             // 
-            // button3
+            // btExcluir
             // 
-            button3.Location = new Point(33, 251);
-            button3.Name = "button3";
-            button3.Size = new Size(112, 40);
-            button3.TabIndex = 3;
-            button3.Text = "Excluir";
-            button3.UseVisualStyleBackColor = true;
-            button3.Click += button3_Click;
+            btExcluir.Location = new Point(33, 251);
+            btExcluir.Name = "btExcluir";
+            btExcluir.Size = new Size(112, 40);
+            btExcluir.TabIndex = 3;
+            btExcluir.Text = "Excluir";
+            btExcluir.UseVisualStyleBackColor = true;
+            btExcluir.Click += btExcluir_Click;
             // 
-            // panel1
+            // panelCliente
             // 
-            panel1.Location = new Point(175, 33);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(543, 377);
-            panel1.TabIndex = 4;
-            panel1.Paint += panel1_Paint;
+            panelCliente.Location = new Point(175, 33);
+            panelCliente.Name = "panelCliente";
+            panelCliente.Size = new Size(543, 377);
+            panelCliente.TabIndex = 4;
             // 
-            // button4
+            // btVoltar
             // 
-            button4.Location = new Point(33, 370);
-            button4.Name = "button4";
-            button4.Size = new Size(112, 40);
-            button4.TabIndex = 5;
-            button4.Text = "Voltar";
-            button4.UseVisualStyleBackColor = true;
-            button4.Click += button4_Click;
+            btVoltar.Location = new Point(33, 370);
+            btVoltar.Name = "btVoltar";
+            btVoltar.Size = new Size(112, 40);
+            btVoltar.TabIndex = 5;
+            btVoltar.Text = "Voltar";
+            btVoltar.UseVisualStyleBackColor = true;
+            btVoltar.Click += btVoltar_Click;
             // 
             // FuncionarioPage
             // 
@@ -101,14 +101,13 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(254, 226, 215);
             ClientSize = new Size(800, 450);
-            Controls.Add(button4);
-            Controls.Add(panel1);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(btVoltar);
+            Controls.Add(panelCliente);
+            Controls.Add(btExcluir);
+            Controls.Add(btAtualizar);
+            Controls.Add(btCadastrar);
             Controls.Add(pictureBox1);
             Name = "FuncionarioPage";
-            Text = "FuncionarioPage";
             Load += FuncionarioPage_Load_1;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
@@ -117,10 +116,10 @@
         #endregion
 
         private PictureBox pictureBox1;
-        private Button button1;
-        private Button button2;
-        private Button button3;
-        private Panel panel1;
-        private Button button4;
+        private Button btCadastrar;
+        private Button btAtualizar;
+        private Button btExcluir;
+        private Panel panelCliente;
+        private Button btVoltar;
     }
 }

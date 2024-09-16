@@ -1,4 +1,6 @@
-﻿using Sistema_para_Gerenciar_Hotel_HotelHub_.Model;
+﻿using Sistema_para_Gerenciar_Hotel_HotelHub_.Model.DAO;
+using Sistema_para_Gerenciar_Hotel_HotelHub_.Model.DTO;
+using Sistema_para_Gerenciar_Hotel_HotelHub_.Model.UserViewsDTO;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,73 +9,76 @@ namespace Sistema_para_Gerenciar_Hotel_HotelHub_.Controller
 {
     public class FuncionarioController
     {
-        private List<Funcionario> listFunc = new List<Funcionario>();
-
         public FuncionarioController() { }
 
-        // Adiciona um novo funcionário à lista
-        public void AdicionarFuncionario(Funcionario funcionario)
+        public bool AdicionarFuncionario(string nome, string sobrenome, string cpf, string email,DateTime dataNascimento, string estadoCivil)
         {
-            if (funcionario == null)
+            FuncionarioDTO funcionarioDTO = new FuncionarioDTO(nome, sobrenome, cpf, email, dataNascimento, estadoCivil);
+            FuncionarioDAO funcionarioDAO = new FuncionarioDAO();
+            if (!funcionarioDAO.AdicionarFuncionarioBd(funcionarioDTO))
             {
-                throw new ArgumentNullException(nameof(funcionario), "Funcionário não pode ser nulo.");
+                return false;
             }
 
-            // Gerar um ID único (aqui, apenas incrementamos, mas isso pode ser melhorado)
-            funcionario.Id = listFunc.Count > 0 ? listFunc.Max(f => f.Id) + 1 : 1;
-            listFunc.Add(funcionario);
+            return true;
         }
 
-        // Atualiza um funcionário existente
-        public void AtualizarFuncionario(Funcionario funcionario)
+        public bool AtualizarFuncionario(int id, string nome, string sobrenome, string cpf, string email, DateTime dataNascimento, string estadoCivil)
         {
-            if (funcionario == null)
+            FuncionarioDTO funcionarioDTO = new FuncionarioDTO(id, nome, sobrenome, cpf, email,dataNascimento, estadoCivil);
+            FuncionarioDAO funcionarioDAO = new FuncionarioDAO();
+            if (!funcionarioDAO.AlterarFuncionarioBd(funcionarioDTO))
             {
-                throw new ArgumentNullException(nameof(funcionario), "Funcionário não pode ser nulo.");
+                return false;
             }
 
-            var funcionarioExistente = listFunc.FirstOrDefault(f => f.Id == funcionario.Id);
-            if (funcionarioExistente == null)
+            return true;
+        }
+
+        public bool RemoverFuncionario(int id)
+        {
+            FuncionarioDAO funcDao = new FuncionarioDAO();
+            if (!funcDao.DeletarFuncionario(id))
+            {
+                return false;
+            }
+            return true;
+        }
+
+        internal FuncionarioDTO BuscarFuncionarioPorId(int id)
+        {
+            FuncionarioDAO funcDao = new FuncionarioDAO();
+            FuncionarioDTO dto = funcDao.BuscarFuncionario(id);
+            if (dto == null)
             {
                 throw new KeyNotFoundException("Funcionário não encontrado.");
             }
 
-            funcionarioExistente.Name = funcionario.Name;
-            funcionarioExistente.Sobrenome = funcionario.Sobrenome;
-            funcionarioExistente.CPF = funcionario.CPF;
-            funcionarioExistente.email = funcionario.email;
-            funcionarioExistente.estadoCivil = funcionario.estadoCivil;
-            funcionarioExistente.dataNasc = funcionario.dataNasc;
+            return dto;
         }
 
-        // Remove um funcionário pelo ID
-        public void RemoverFuncionario(int id)
-        {
-            var funcionario = listFunc.FirstOrDefault(f => f.Id == id);
-            if (funcionario == null)
-            {
-                throw new KeyNotFoundException("Funcionário não encontrado.");
-            }
-
-            listFunc.Remove(funcionario);
-        }
-
-        // Lista todos os funcionários
         public List<Funcionario> ListarFuncionarios()
         {
-            return listFunc.ToList();
-        }
+            FuncionarioDAO funcDao = new FuncionarioDAO();
+            List<FuncionarioDTO> funcionariosDTO = funcDao.ListarFuncionarios();
+            List<Funcionario> funcList = new List<Funcionario>();
 
-        // Busca um funcionário pelo ID
-        public Funcionario BuscarFuncionarioPorId(int id)
-        {
-            var funcionario = listFunc.FirstOrDefault(f => f.Id == id);
-            if (funcionario == null)
+            foreach (var dto in funcionariosDTO)
             {
-               MessageBox.Show("Funcionário não encontrado.");
+                Funcionario funcionario = new Funcionario();
+                funcionario.Id = dto.Id;
+                funcionario.Name = dto.Nome;
+                funcionario.Sobrenome = dto.Sobrenome;
+                funcionario.CPF = dto.Cpf;
+                funcionario.email = dto.Email;
+                funcionario.dataNasc = dto.DataNascimento;
+                funcionario.estadoCivil = dto.EstadoCivil;
+
+                funcList.Add(funcionario);
             }
 
-            return funcionario;
+            return funcList;
         }
     }
+
 }

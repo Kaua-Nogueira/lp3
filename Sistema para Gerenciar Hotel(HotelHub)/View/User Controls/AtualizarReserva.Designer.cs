@@ -1,4 +1,6 @@
-﻿namespace Sistema_para_Gerenciar_Hotel_HotelHub_.View.Controls
+﻿using Sistema_para_Gerenciar_Hotel_HotelHub_.Model.UserViewsDTO;
+
+namespace Sistema_para_Gerenciar_Hotel_HotelHub_.View.Controls
 {
     partial class AtualizarReserva
     {
@@ -73,7 +75,7 @@
             // 
             // reservaBindingSource
             // 
-            reservaBindingSource.DataSource = typeof(Model.Reserva);
+            reservaBindingSource.DataSource = typeof(Reserva);
             // 
             // idDataGridViewTextBoxColumn
             // 

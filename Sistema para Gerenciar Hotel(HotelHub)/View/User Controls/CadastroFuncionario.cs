@@ -1,21 +1,24 @@
 ﻿using System;
 using System.Windows.Forms;
 using Sistema_para_Gerenciar_Hotel_HotelHub_.Controller;
-using Sistema_para_Gerenciar_Hotel_HotelHub_.Model;
 
 namespace Hotelhub
 {
-    public partial class CadastroFuncControl : UserControl
+    public partial class CadastroFuncionario : UserControl
     {
-        private FuncionarioController funcionarioController;
-        private Funcionario funcionario;
         private bool isEdit = false;
+        FuncionarioController funcionarioController = new FuncionarioController();
 
+        //Armazenando Id para não perder
+        int idinstancia = 0;
+
+        //Eventos
         // Define um evento para notificar quando o cadastro for realizado
         public event EventHandler CadastroRealizado;
         public event EventHandler AtualizarRealizado;
 
-        public CadastroFuncControl(FuncionarioController controller)
+
+        public CadastroFuncionario(FuncionarioController controller)
         {
             InitializeComponent();
             funcionarioController = controller;
@@ -34,45 +37,51 @@ namespace Hotelhub
                 return;
             }
 
-            // Coleta os dados dos campos
-            var funcionario = new Funcionario
-            {
-                Name = tb_nome.Text,
-                Sobrenome = tb_sobrenome.Text,
-                CPF = tb_cpf.Text,
-                email = tb_email.Text,
-                dataNasc = datetp_nasc.Value
-            };
-
-            // Determina o estado civil
-            if (rb_solteiro.Checked) funcionario.estadoCivil = "Solteiro";
-            else if (rb_casado.Checked) funcionario.estadoCivil = "Casado";
-            else if (rb_divorciado.Checked) funcionario.estadoCivil = "Divorciado";
-            else if (rb_viuvo.Checked) funcionario.estadoCivil = "Viúvo";
+            String estado_civil = "";
+            if (rb_solteiro.Checked) estado_civil = "Solteiro";
+            else if (rb_casado.Checked) estado_civil = "Casado";
+            else if (rb_divorciado.Checked) estado_civil = "Divorciado";
+            else if (rb_viuvo.Checked) estado_civil = "Viúvo";
 
             try
             {
                 // Adiciona o funcionário
                 if (isEdit)
                 {
-                    funcionario.Id = this.funcionario.Id;
-                    funcionarioController.AtualizarFuncionario(funcionario);
-                    MessageBox.Show("Funcionário atualizado com sucesso!");
-                    // Limpa os campos após o cadastro
-                    LimparCampos();
+                    if (funcionarioController.AtualizarFuncionario(idinstancia, tb_nome.Text, tb_sobrenome.Text, tb_cpf.Text, tb_email.Text,
+                                                                  datetp_nasc.Value, estado_civil))
+                    {
+                        MessageBox.Show("Funcionario editado com sucesso");
+                        LimparCampos();
+                        isEdit = false;
 
-                    // Dispara o evento de atualização realizado
-                    AtualizarRealizado?.Invoke(this, EventArgs.Empty);
+                        AtualizarRealizado?.Invoke(this, EventArgs.Empty);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Erro ao editar Funcionario");
+
+                    }
+                    
+
+                    
                 }
                 else
                 {
-                    funcionarioController.AdicionarFuncionario(funcionario);
-                    MessageBox.Show("Funcionário cadastrado com sucesso!");
-                    // Limpa os campos após o cadastro
-                    LimparCampos();
+                    if (funcionarioController.AdicionarFuncionario(tb_nome.Text, tb_sobrenome.Text, tb_cpf.Text, tb_email.Text,
+                                                                  datetp_nasc.Value, estado_civil))
+                    {
+                        MessageBox.Show("Funcionario cadastrado com sucesso");
+                        LimparCampos();
+                        isEdit = false;
 
-                    // Dispara o evento de cadastro realizado
-                    CadastroRealizado?.Invoke(this, EventArgs.Empty);
+                        CadastroRealizado?.Invoke(this, EventArgs.Empty);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Erro ao cadastrar Funcionario");
+
+                    }
                 }
             }
             catch (Exception ex)
@@ -94,17 +103,19 @@ namespace Hotelhub
             rb_viuvo.Checked = false;
         }
 
-        public void editar(Funcionario funcionario)
+        public void editar(int id, string nome, string sobrenome, string cpf, string email,
+                           DateTime dataNascimento, string estadoCivil)
         {
-            this.funcionario = funcionario;
             isEdit = true;
-            tb_cpf.Text = funcionario.CPF;
-            tb_email.Text = funcionario.email;
-            tb_nome.Text = funcionario.Name;
-            tb_sobrenome.Text = funcionario.Sobrenome;
-            datetp_nasc.Value = funcionario.dataNasc;
+            idinstancia = id;
 
-            switch (funcionario.estadoCivil)
+            tb_cpf.Text = cpf;
+            tb_email.Text = email;
+            tb_nome.Text = nome;
+            tb_sobrenome.Text = sobrenome;
+            datetp_nasc.Value = dataNascimento;
+
+            switch (estadoCivil)
             {
                 case "Solteiro":
                     rb_solteiro.Checked = true;

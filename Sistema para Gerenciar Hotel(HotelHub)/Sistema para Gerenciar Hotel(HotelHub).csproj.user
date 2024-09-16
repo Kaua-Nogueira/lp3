@@ -4,25 +4,34 @@
     <_LastSelectedProfileId>C:\Users\kaua\source\repos\lp3\Sistema para Gerenciar Hotel%28HotelHub%29\Properties\PublishProfiles\FolderProfile1.pubxml</_LastSelectedProfileId>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Update="View\Controls\AtualizarFunc.cs">
+    <Compile Update="View\ClientePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\User Controls\AtualizarCliente.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="View\Controls\AtualizarReserva.cs">
+    <Compile Update="View\User Controls\AtualizarFunc.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="View\Controls\AtualizarReservas.cs">
+    <Compile Update="View\User Controls\AtualizarReserva.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="View\Controls\CadastrarReservasControl.cs">
+    <Compile Update="View\User Controls\AtualizarReservas.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="View\Controls\CadastroFuncControl.cs">
+    <Compile Update="View\User Controls\CadastrarReservasControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="View\Controls\ConsultarReservasControl.cs">
+    <Compile Update="View\User Controls\CadastroCliente.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="View\Controls\RemoverReservasControl.cs">
+    <Compile Update="View\User Controls\CadastroFuncionario.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="View\User Controls\ConsultarReservasControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="View\User Controls\RemoverReservasControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="View\FuncionarioPage.cs">
